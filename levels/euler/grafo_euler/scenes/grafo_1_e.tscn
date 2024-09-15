@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsc5ea2akq12c"]
+
+[ext_resource type="Script" path="res://levels/euler/grafo_euler/scripts/grafo_1_e.gd" id="1_evxp2"]
+[ext_resource type="PackedScene" uid="uid://bw86c8rivfpgn" path="res://objets/scenes/star.tscn" id="2_qa5we"]
+
+[node name="Grafo 1-E" type="Node2D"]
+script = ExtResource("1_evxp2")
+
+[node name="Star1" parent="." instance=ExtResource("2_qa5we")]
+offset_left = 325.0
+offset_top = 38.0
+offset_right = 405.0
+offset_bottom = 118.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Star2" parent="." instance=ExtResource("2_qa5we")]
+offset_left = 512.0
+offset_top = 148.0
+offset_right = 592.0
+offset_bottom = 228.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Star3" parent="." instance=ExtResource("2_qa5we")]
+offset_left = 390.0
+offset_top = 335.0
+offset_right = 470.0
+offset_bottom = 415.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Star4" parent="." instance=ExtResource("2_qa5we")]
+offset_left = 226.0
+offset_top = 318.0
+offset_right = 306.0
+offset_bottom = 398.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Star5" parent="." instance=ExtResource("2_qa5we")]
+offset_left = 133.0
+offset_top = 148.0
+offset_right = 213.0
+offset_bottom = 228.0
+metadata/_edit_use_anchors_ = true

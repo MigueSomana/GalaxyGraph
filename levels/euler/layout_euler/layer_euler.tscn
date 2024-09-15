@@ -1,0 +1,100 @@
+[gd_scene load_steps=4 format=3 uid="uid://b23cp1whsn7pb"]
+
+[ext_resource type="Script" path="res://levels/euler/layout_euler/layer_euler.gd" id="1_00wde"]
+[ext_resource type="PackedScene" uid="uid://bsc5ea2akq12c" path="res://levels/euler/grafo_euler/scenes/grafo_1_e.tscn" id="2_qkdu0"]
+[ext_resource type="Texture2D" uid="uid://duubmxjhhtbt3" path="res://assets/iconsprueba.svg" id="3_4du84"]
+
+[node name="Layer_Euler" type="Node2D"]
+script = ExtResource("1_00wde")
+
+[node name="Level 1-E" parent="." instance=ExtResource("2_qkdu0")]
+position = Vector2(18, 351)
+
+[node name="Line2D" type="Line2D" parent="."]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Superior" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 700.0
+offset_bottom = 208.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Superior"]
+custom_minimum_size = Vector2(640, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/Superior/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Regresar" type="TextureButton" parent="Control/Superior/HBoxContainer/CenterContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3_4du84")
+
+[node name="CenterContainer2" type="CenterContainer" parent="Control/Superior/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="Configuracion" type="TextureButton" parent="Control/Superior/HBoxContainer/CenterContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("3_4du84")
+
+[node name="Inferior" type="MarginContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 1050.0
+offset_right = 700.0
+offset_bottom = 1278.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 100
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Inferior"]
+custom_minimum_size = Vector2(640, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/Inferior/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="Repetir" type="TextureButton" parent="Control/Inferior/HBoxContainer/CenterContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3_4du84")
+
+[node name="CenterContainer2" type="CenterContainer" parent="Control/Inferior/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="Menu" type="TextureButton" parent="Control/Inferior/HBoxContainer/CenterContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("3_4du84")
+
+[node name="CenterContainer3" type="CenterContainer" parent="Control/Inferior/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+
+[node name="Siguiente" type="TextureButton" parent="Control/Inferior/HBoxContainer/CenterContainer3"]
+layout_mode = 2
+texture_normal = ExtResource("3_4du84")
